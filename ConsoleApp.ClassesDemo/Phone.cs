@@ -4,25 +4,24 @@ namespace ConsoleApp.ClassesDemo
 {
     public class Phone
     {
-        public string brand;
-        public string model;
-        public bool isSmartphone;
-
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public bool IsSmartphone { get; set; }
         public Phone(string brand, string model, bool isSmartphone)
         {
-            this.brand = brand;
-            this.model = model;
-            this.isSmartphone = isSmartphone;
+            this.Brand = brand;
+            this.Model = model;
+            this.IsSmartphone = isSmartphone;
         }
-        public void ringTone()
+        public void ringTone(string tone)
         {
-            if (isSmartphone)
+            if (IsSmartphone)
             {
-                Console.WriteLine($"My {brand} {model} plays music as a ringtone");
+                Console.WriteLine($"My {Brand} {Model} plays {tone} as a ringtone");
             }
             else
             {
-                Console.WriteLine($"My {brand} {model} goes tring tring");
+                Console.WriteLine($"My {Brand} {Model} goes tring tring");
             }
         }
     }

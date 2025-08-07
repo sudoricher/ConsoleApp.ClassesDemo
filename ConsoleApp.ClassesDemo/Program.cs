@@ -18,7 +18,7 @@ namespace ConsoleApp.ClassesDemo
 
             // Create an instance of the Phone class
             Phone myPhone = new Phone("Iphone", "15 Pro", true);
-            myPhone.ringTone();
+            myPhone.ringTone("Can we talk");
 
             // Create an instance of the Song class
             Song mySong = new Song("Can we be lovers", "Teddy Pendagrass", 240);
